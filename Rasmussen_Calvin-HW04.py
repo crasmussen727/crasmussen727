@@ -1,24 +1,22 @@
+# Calvin Rasmussen
+# UWYO COSC 1010
+# Submission Date: 11/15/2024
+# HW 04
+# Lab Section:12
+# Sources, people worked with, help given to: notes from class, lots of practice and patence
 # Open the input and output files
 with open('prompt.txt', 'r') as input_file, open('out.txt', 'w') as output_file:
-    # Loop through each line in the input file
     for line in input_file:
-        # Split the line by tab to get the key-value pairs
-        pairs = line.split(" ")
-        
-        # Initialize an empty string to store the result for this line
-        result_line = ""
-        
-        # Process each key-value pair
-        for pair in pairs:
-            # Split the pair into key and value
-            key, value = pair.split(":")
-            value = int(value)  # Convert the value to an integer
+        pairs = line.split("\t") # I need to split the line by tab
+        pairs = line.split(" ")  #also need to split the pairs by space
+        result_line = "" # start an empty string to store the result for this line
+        for pair in pairs: # this will process each key-value pair in the line
+            key, value = pair.split(":")  # this will split the pair into key and value
+            value = int(value)  # this will convert the value to an integer
             
-            # Depending on the key, append the corresponding character repeated value times
             if key == 'w':
                 result_line += " " * value  # Add 'value' number of white spaces
             elif key == '*':
                 result_line += "*" * value  # Add 'value' number of asterisks
         
-        # Write the constructed result to the output file
-        output_file.write(result_line)
+        output_file.write(result_line + '\n') # put all of this into the output file
