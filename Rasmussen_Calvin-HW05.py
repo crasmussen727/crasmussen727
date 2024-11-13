@@ -18,11 +18,11 @@ for row in range(1, 20):  # Adjust range for the size of your art
 # Step 2: Define the pixel art pattern using a dictionary
 # Format: {color_code: [cell_coordinates]}
 pixel_art_data = {
-    "#FF5733": ["A1", "A2", "B1", "B2"],  # Example cells for one color
-    "#33FF57": ["A3", "A4", "B3", "B4"],  # Example cells for another color
-    "#3357FF": ["C1", "C2", "D1", "D2"],  # And so on
-    "#FFFF33": ["C3", "C4", "D3", "D4"],
-    "#FF33FF": ["E1", "E2", "F1", "F2"]
+    "#FFB6C1": ["D5", "E5", "F5", "C6", "D6", "E6", "F6", "G6", "C7", "G7", "B8", "C8", "G8", "H8", "B9", "D9", "E9", "F9", "H9", "B10", "C10", "G10", "H10"],
+    "#FF69B4": ["D11", "F11"],  # Cheeks
+    "#FF4500": ["C12", "G12"],  # Feet
+    "#000000": ["D7", "F7", "C9", "G9"],  # Eyes and outline
+    "#FFFFFF": ["D6", "F6"]  # Eye highlights
 }
 
 # Step 3: Apply colors to the specified cells
